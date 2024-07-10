@@ -1,0 +1,33 @@
+body, html {
+    height: 100%; /* Ensure body and html take full viewport height */
+    margin: 0;     /* Remove default margins */
+    box-sizing: border-box; /* Include padding and border in element's total width and height 
+}
+    
+.container img {
+    max-width: 18%;  /* Adjust percentage to control size */
+    height: auto;     
+    display: block;  
+    margin: 0 auto;  /* Center the image horizontally */
+    pointer-events: none; /* Disable image zoom on click/hover */
+    position: fixed;
+    object-fit: cover; /* This is the key! */
+}
+
+
+img {
+    width: 100%; /* Make image fill its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent extra space below the image */
+}
+
+button {
+    display: block;
+    margin: 20px auto; /* Add margin above the button and center it */
+    padding: 10px 20px;
+    background: linear-gradient(to right, #007bff, #28a745); /* Gradient background */
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
